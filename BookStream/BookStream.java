@@ -46,7 +46,7 @@ public class BookStream {
                 Collectors.averagingDouble(Book::getPrice)
             ));
 
-        System.out.println("Durchschnittliche Preis pro Autor:");
+        System.out.println("Average price per author:");
         result.forEach((author, averagePrice) ->
             System.out.printf("%s: %.2f€\n", author, averagePrice)
         );
